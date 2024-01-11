@@ -6,3 +6,14 @@
 # cURL-envsubst
 
 Docker image based on official cURL docker image, adding envsubst command for execute placeholders substitution when executing cURL commands.
+
+## Build
+
+It should be auto-built based in the repo tags, but you can do the same manually executing the next command:
+
+```shell
+DOCKER_TAG=8.5.0 \
+IMAGE_NAME=softonic/curl-envsubst:8.5.0 \
+DOCKER_REPO=softonic/curl-envsubst \
+  hooks/build
+```
